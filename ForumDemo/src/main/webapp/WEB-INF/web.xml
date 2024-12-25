@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+      
+    <!-- Login -->   
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.user.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userregistration</servlet-name>
+		<servlet-class>com.user.UserRegistration</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userregistration</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>updateuser</servlet-name>
+		<servlet-class>com.user.UpdateUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateuser</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteuser</servlet-name>
+		<servlet-class>com.user.DeleteUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteuser</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+    <!-- Forum --> 
+	<servlet>
+		<servlet-name>foruminsert</servlet-name>
+		<servlet-class>com.forum.ForumInsert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>foruminsert</servlet-name>
+		<url-pattern>/fInsert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateforum</servlet-name>
+		<servlet-class>com.forum.ForumUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateforum</servlet-name>
+		<url-pattern>/forumupdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteforum</servlet-name>
+		<servlet-class>com.forum.ForumDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteforum</servlet-name>
+		<url-pattern>/forumdelete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>forumretrieve</servlet-name>
+		<servlet-class>com.forum.ForumServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>forumretrieve</servlet-name>
+		<url-pattern>/forum</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>myforum</servlet-name>
+		<servlet-class>com.forum.ForumAccountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myforum</servlet-name>
+		<url-pattern>/forumAccount</url-pattern>
+	</servlet-mapping>
+
+</web-app>
